@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 | JavaScript Pay Calculator</title>
+    <meta name='author' content='Jase Messina'>
+    <meta name='description' content='java script calculator'>
+
+
+</head>
+<body>
+    
+    <h1>Week 6 Pay Calculator</h1>
+    <script>
+        var hourlyPay = prompt('Please enter your hourly pay: ')
+
+        hourlyPay = Number(hourlyPay)
+
+        var hoursWorked = prompt('Please enter the hours you worked for a two week period: ')
+
+        hoursWorked = Number(hoursWorked)
+
+        var tax = .2
+
+        var grossPay = hourlyPay * hoursWorked
+
+        var gp = grossPay.toFixed(2)
+
+        var taxed = grossPay * tax
+
+        var txd = taxed.toFixed(2)
+
+        var netPay = grossPay - taxed
+
+        var np = netPay.toFixed(2)
+
+        alert(`Your Gross pay for this two week period is: $${gp}\nThe amount taxed on your gross pay is: $${txd}\nYour total net pay is: $${np}`)
+
+        console.log(`Gross Pay: $${gp}`)
+        console.log(`Uncle Sam's share: $${txd}`)
+        console.log(`Net Pay: $${np}`)
+        
+    </script>
+
+
+
+
+</body>
+</html>
